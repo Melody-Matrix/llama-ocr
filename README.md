@@ -3,6 +3,7 @@
 A simple OCR app built with EasyOCR and Streamlit. Upload an image and extract text instantly, with confidence scores and optional enhancements.
 
 🔗 **Live App**: [Try it here](https://llama-ocr-drrb7j5ekzqrkhxaouvtsq.streamlit.app)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-LlamaOCR-brightgreen)](https://llama-ocr-drrb7j5ekzqrkhxaouvtsq.streamlit.app)
 
 🧠 Built by **John Jaskaran Singh**
 
@@ -24,3 +25,5 @@ A simple OCR app built with EasyOCR and Streamlit. Upload an image and extract t
 
 
 Update README with app link and features
+Add Streamlit badge to README
+
