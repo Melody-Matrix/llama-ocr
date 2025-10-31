@@ -1,1 +1,4 @@
-pyresparser
+streamlit
+easyocr
+Pillow
+
