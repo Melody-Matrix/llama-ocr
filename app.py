@@ -3,9 +3,12 @@ from PIL import Image, ImageEnhance
 import easyocr
 import numpy as np
 
-# 🎯 App Title
-st.markdown("<h1 style='text-align: center;'>🦙 OCR with EasyOCR</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>Upload an image to extract text with enhanced accuracy</p>", unsafe_allow_html=True)
+# 🎯 Custom Headline
+st.markdown("""
+    <h1 style='text-align: center;'>🦙 Llama-OCR Project by John Jaskaran Singh<br>
+    <span style='font-size:18px;'>(Melody-Matrix)</span></h1>
+    <p style='text-align: center;'>Upload an image to extract text with enhanced accuracy</p>
+""", unsafe_allow_html=True)
 
 # 🔄 Cache the OCR model
 @st.cache_resource
@@ -38,7 +41,12 @@ if uploaded_file:
 
     # 🔍 OCR Processing
     image_np = np.array(image)
-    result = reader.readtext(image_np, detail=1)
+
+    try:
+        result = reader.readtext(image_np, detail=1)
+    except Exception as e:
+        st.error(f"OCR failed: {e}")
+        st.stop()
 
     # 📋 Display results in columns
     st.markdown("### 🔍 Extracted Text")
