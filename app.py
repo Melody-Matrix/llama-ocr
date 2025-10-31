@@ -10,7 +10,7 @@ st.markdown("<p style='text-align: center;'>Upload an image to extract text with
 # 🔄 Cache the OCR model
 @st.cache_resource
 def load_reader():
-    return easyocr.Reader(['en'], rotation_info=True)
+    return easyocr.Reader(['en'], gpu=False)
 
 reader = load_reader()
 
