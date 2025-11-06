@@ -5,7 +5,7 @@ import numpy as np
 
 # 🎯 Custom Headline
 st.markdown("""
-    <h1 style='text-align: center;'>🦙 Llama-OCR Project by John Jaskaran Singh<br>
+    <h1 style='text-align: center;'>🦙 Llama-OCR Project by John Jaskaran Singh(Team-DELTA)<br>
     <span style='font-size:18px;'>(Melody-Matrix)</span></h1>
     <p style='text-align: center;'>Upload an image to extract text with enhanced accuracy</p>
 """, unsafe_allow_html=True)
